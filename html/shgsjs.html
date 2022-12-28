@@ -1,0 +1,104 @@
+<html>
+  <head>
+  
+  <title>
+      Customer Sign Up Form
+  </title>
+  <script src="../js/shgsjs.js"></script>
+  <link rel="stylesheet" href="../js/styles.css">
+  </head>
+  <body>
+    <table align="center">
+      <tr>
+        <td colspan="2">
+          <img src="../images/Eficens.png" alt="eficens logo" width="200" height="200"><br><br>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <a href="../html/index.html">Home</a><br><br>
+        </td>
+      </tr>
+    </table>
+    <div align="center" id="successMessage"></div><br>
+    <div align="center" id="errors"></div><br>
+    <form id="signUpFrom">
+      <table align="center">
+        <tr>
+          <td><lable for="fname">First Name:</lable><br></td>
+          <td><input type="text" id="fname" name="fname"><br></td>
+        </tr>
+        <tr>
+          <td><lable for="lname">Last Name:</lable><br></td>
+          <td> <input type="text" id="lname" name="lname"><br></td>
+        </tr>
+        <tr>
+          <td><lable for="dob">Date Of Birth:</lable><br></td>
+          <td><input type="date" id="dob" name="dob"><br></td>
+        </tr>
+        <tr>
+          <td><lable for="email">Email Id:</lable><br></td>
+          <td><input type="email" id="email" name="email"><br></td>
+        </tr>
+        <tr>
+         <td><lable for="phone">Phone Number:</lable><br></td>
+         <td><input type="text" id="phone" name="phone"><br></td>
+        </tr>
+        <tr>
+         <td><label for="gender">Select Gender</label></td>
+         <td>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label><br>
+         </td>
+        </tr>
+  
+        <tr>
+          <td>
+           <label for="phone" >Interested In</label>
+          </td>
+          <td>
+            <input type="checkbox" id="cloths" name="cloths" value="Cloths">
+            <label for="cloths">Cloths</label><br>
+            <input type="checkbox" id="electronics" name="electronics" value="Electronics">
+            <label for="electronics">Electronics</label><br>
+            <input type="checkbox" id="books" name="books" value="Books">
+            <label for="books">Books</label><br>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="country">Home country </label><br></td>
+          <td>
+            <select name="country" id="country">
+              <option value="">Select Country</option>
+              <option valus="USA">USA</option>
+              <option valus="Nepal">Nepal</option>
+              <option valus="Sri Lanka">Sri Lanka</option>
+              <option valus="India">India</option>
+              <option valus="Pakistan">Pakistan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label><br></td>
+        <td><input type="password" id="password" name="password"><br></td>
+        </tr>
+        <tr>
+         <td> <label for="confirmPassword">Confirm Password:</label><br></td>
+         <td><input type="confirmPassword" id="confirmPassword" name="confirmPassword"><br><br><br></td>
+        </tr>
+        <tr>
+          <td><label for="shippingAddress">Shipping Address:</label><br></td>
+          <td>
+            <textarea id="shippingAddress" rows="5" cols="30" name="shippingAddress"></textarea>
+          </td>
+        </tr>
+      </table><br><br>
+  <div align="center">
+    <button class="btnGreen" type="button" onclick="validateForm();">Sign Up</button>
+    <input class="btnGreen" type="button" onclick="confirmClearFields();" value="Clear All Fields">
+  </div>
+    </form>
+  </body>
+  </html>

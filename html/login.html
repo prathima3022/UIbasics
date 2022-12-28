@@ -1,0 +1,23 @@
+<html>
+<head>
+
+<title>
+    Customer Login Form
+</title>
+</head>
+<body>
+  <img src="../images/Eficens.png" alt="eficens logo" width="200" height="200"><br><br>
+  <a href="../html/index.html">Home</a><br><br>
+  <div id="errors"></div>
+  <form onsubmit="return validateLoginForm();" method="POST" action="./product.html">
+    <lable for="email">Email Id:</lable><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+
+    <button type="submit">Login</button>
+    <input type="button" value="Clear All Fields">
+</form>
+</body>
+</html>
